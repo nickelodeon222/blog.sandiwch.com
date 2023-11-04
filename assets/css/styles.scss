@@ -1,20 +1,36 @@
 ---
 ---
+hr {
+    stroke-width: 100%;
+}
+
 body {
     margin: 0;
-    background-color: #abf5af;
+    background-image: url("/assets/background.png");
+    background-size: 0.625%;
+    image-rendering: pixelated;
     text-align: center;
 }
 
 .nav-bar {
-    width: fit-content;
     height: fit-content;
-    margin: auto;
+    background-color: #aeeea3;
+}
+
+.nav-bar:after {
+    content: "";
+    background-image: url("/assets/border.png");
+    height: 20px;
+    display: block;
+    background-size: 1%;
+    background-repeat: repeat-x;
+    background-position: center bottom;
 }
 
 .nav-bar > ul {
     list-style-type: none;
-    margin: 0;
+    margin: auto;
+    width: fit-content;
     padding: 0;
     overflow: hidden;
 }
@@ -27,6 +43,7 @@ body {
 #title {
     font-weight: bolder;
     margin-top: 7%;
+    margin-bottom: 0%;
     font-size: 30px;
 }
 
@@ -58,6 +75,7 @@ body {
 }
 
 .containers {
+    margin-top: 10px;
     margin-left: 9.5%;
     gap: 3%;
     display: flex;
