@@ -11,6 +11,6 @@ i've been on the internet since i was a small child which may have been bad but 
 {% for post in site.posts %}
 # [{{post.title}}]({{post.url}})
 {% if post.author %}##### *{{post.author}}*{% endif %}
-{% if post.date %}###### {{post.date | date_to_long_string }} {% endif %}
+{% if post.date %}###### {{post.date | date_to_long_string }} NZT{% endif %}
 {{post.content}}
 {% endfor %}
