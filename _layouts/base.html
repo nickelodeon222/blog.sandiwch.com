@@ -10,7 +10,7 @@
         <div class="nav-bar">
             <ul>
                 <li>
-                    <p id="title"><a href="/">sandiwch</a></p>
+                    <p id="title"><a href="/">{{site.title}}</a></p>
                 </li>
                 {% for page in site.pages %}
                 {% if page.title %}
@@ -22,12 +22,10 @@
             </ul>
         </div>
 
-        <hr>
-
         <div class="containers">
             <div class="profile container">
                 <h1>me!</h1>
-                <p>hi! i'm sandiwch/pickelodeons/nickelodeon222/other names i've used in the past. </p>
+                hi! i'm sandiwch/pickelodeons/nickelodeon222/other names i've used in the past.
 
                 <ul style="text-align: left;">
                     <li>
@@ -46,14 +44,7 @@
                 {{ content }}
             </div>
     
-            <div class="post-list container">
-                <h1>recent posts</h1>
-                <ul>
-                    {% for post in site.posts %}
-                    <li><a href="{{post.url}}">{{post.title}}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
+            {% include post-container.html %}
         </div>
     </body>
 </html>
