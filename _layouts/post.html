@@ -3,5 +3,15 @@ layout: base
 ---
 
 <h1>{{ page.title }}</h1>
-<h5>{% if page.author %}<em>{{ page.author }}</em>{% endif %}</h5>
+{% if page.author %}<h5><em>{{ page.author }}</em></h5>{% endif %}
+{% if page.date %}<h6>{{page.date | date_to_long_string }}</h6>{% endif %}
 {{ content }}
+
+<div class="page-navigation">
+    {% if page.previous.url %}
+    <a class="prev" href="{{page.previous.url}}">&laquo; previous post</a>
+    {% endif %}
+    {% if page.next.url %}
+    <a class="next" href="{{page.next.url}}">next post &raquo;</a>
+    {% endif %}
+</div>
