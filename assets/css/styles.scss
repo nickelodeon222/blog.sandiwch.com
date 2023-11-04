@@ -1,0 +1,64 @@
+---
+---
+body {
+    margin: 0;
+    background-color: #abf5af;
+    text-align: center;
+}
+
+.nav-bar {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-bar li {
+    float: left;
+    height: fit-content;
+}
+
+#title {
+    font-weight: bolder;
+    margin-top: 7%;
+    font-size: 30px;
+}
+
+.nav-bar li p {
+    line-height: 50%;
+    display: block;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+}
+
+.profile {
+    width: 15%;
+}
+
+.main {
+    height: 2%;
+    width: 55%
+}
+
+.post-list {
+    flex: 0.5;
+}
+
+.container {
+    background-color: whitesmoke;
+    border: dashed gray;
+    overflow: scroll;
+}
+
+.containers {
+    margin-left: 9.5%;
+    gap: 3%;
+    display: flex;
+}
