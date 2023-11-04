@@ -12,14 +12,14 @@ body {
     margin: auto;
 }
 
-.nav-bar ul {
+.nav-bar > ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-.nav-bar li {
+.nav-bar > ul > li {
     float: left;
     height: fit-content;
 }
@@ -30,7 +30,7 @@ body {
     font-size: 30px;
 }
 
-.nav-bar li p {
+.nav-bar > ul > li > p {
     line-height: 50%;
     display: block;
     text-align: center;
