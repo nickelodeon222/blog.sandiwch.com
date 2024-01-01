@@ -80,3 +80,19 @@ body {
     gap: 3%;
     display: flex;
 }
+
+.tags {
+    scale: 50%;
+}
+
+.tags > a {
+    font-style: italic;
+}
+
+.tags > a:visited {
+    color: rgb(44, 44, 44);
+}
+
+.tags > a:link {
+    color: gray;
+}

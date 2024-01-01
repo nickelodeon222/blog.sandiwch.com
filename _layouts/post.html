@@ -8,12 +8,12 @@ layout: base
 {{ content }}
 
 {% if page.tags %}
-    <span class>
+    <span class="tags">
         tags:
         {% for tag in page.tags %}
         <a href="/tags/{{tag}}">{{ tag }}</a>
         {% endfor %}
-    </p>
+    </span>
 {% endif %}
 
 <div class="page-navigation">
