@@ -1,0 +1,25 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: base
+---
+<p>hi! i'm pickelodeons/sandiwch/real name that i don't want to say online! i am (as of 2023) 16 years old and i come from new zealand!</p>
+
+<p>i've been on the internet since i was a small child which may have been bad but who knows</p>
+
+{% for post in site.posts %}
+<h1><a href="{{post.url}}">{{post.title}}</a></h1>
+{% if post.author %}<h5><em>{{post.author}}</em></h5>{% endif %}
+{% if post.date %}<h6>{{post.date | date_to_long_string }} NZT</h6>{% endif %}
+
+{{post.excerpt}}
+
+{% if post.excerpt != post.content %}
+    <a href="{{post.url}}">read more</a>
+    <br>
+{% endif %}
+
+{% include tag-bar.html post=post %}
+
+{% endfor %}
