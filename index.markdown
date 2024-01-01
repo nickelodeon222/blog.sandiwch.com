@@ -12,5 +12,6 @@ i've been on the internet since i was a small child which may have been bad but 
 # [{{post.title}}]({{post.url}})
 {% if post.author %}##### *{{post.author}}*{% endif %}
 {% if post.date %}###### {{post.date | date_to_long_string }} NZT{% endif %}
-{{post.content}}
+{{post.excerpt}}
+{% if post.excerpt != post.content %}[read more]({{post.url}}){% endif %}
 {% endfor %}
