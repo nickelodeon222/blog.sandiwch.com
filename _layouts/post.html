@@ -7,14 +7,7 @@ layout: base
 {% if page.date %}<h6>{{page.date | date_to_long_string }} NZT</h6>{% endif %}
 {{ content }}
 
-{% if page.tags %}
-    <span class="tags">
-        tags:
-        {% for tag in page.tags %}
-        <a href="/tags/{{tag}}">{{ tag }}</a>
-        {% endfor %}
-    </span>
-{% endif %}
+{% include tag-bar.html post=page %}
 
 <div class="page-navigation">
     {% if page.previous.url %}
