@@ -22,7 +22,7 @@ title: sandiwch
 email: sandiwch@sandiwch.com
 # description: 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.sandiwch.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://blog.sandiwch.com" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
